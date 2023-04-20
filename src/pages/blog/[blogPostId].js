@@ -37,7 +37,7 @@ export async function getStaticPaths() {
   const posts = await response.json()
 
   return {
-    paths: posts.map(post => ({
+    paths: posts.slice(0, 20).map(post => ({
       params: {
         blogPostId: post.id.toString(),
       },
