@@ -8,7 +8,7 @@ function BlogPost({ post }) {
         <p>{post.body}</p>
       </article>
 
-      <Link href="/blog" className="block">
+      <Link href="/" className="block">
         Back to all posts
       </Link>
     </div>
